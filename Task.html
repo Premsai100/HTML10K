@@ -4,16 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+
+    <style>
+        .cont{
+            width: 300px;
+            height: 200px;
+            border: 2px solid #7fe5de;
+            border-radius: 10px;
+            background-color: #7fe5de;
+        }
+        .nav{
+            display: flex;
+            justify-content: end;
+            gap: 30px;
+            margin-right: 15px;
+        }
+        h4{
+            text-align: center;
+        }
+        .btn{
+            text-align: center;
+        }
+        .btn button{
+            width: 100px;
+            border-radius: 20px;
+            background-color: #4b6cfd;
+            outline: none;
+            box-shadow: none;
+        }
+
+        .bar{
+            width: 290px;
+            height: 10px;
+            border: 2px solid #ccc;
+            display: flex;
+            overflow: hidden;
+
+
+        }
+        .one{
+            background-color: #7fe5de;
+            height: 100%;
+        }
+        .two{
+            background-color: black;
+            height: 100%;
+        }
+        .three{
+            background-color: #4b6cfd;
+            height: 100%;
+        }
+        .footer{
+            background-color: white;
+            height: 30px;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            display: none;
+            width: 100%;
+        }
+       
+        .cont:hover{
+            .footer{
+                display: flex;
+            }
+        }
+
+    </style>
 </head>
 <body>
+    <div class="cont">
+        <div class="nav">
+            <p>Home</p>
+            <p>Tools</p>
+        </div>
+        <h4>Create beautiful designs with
+            Super designer</h4>
 
-    <header>
-        <a href="#prem">first</a>
-        <a href="#route">second</a>
-    </header>
-    <img src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?cs=srgb&dl=pexels-souvenirpixels-414612.jpg&fm=jpg" width="100%" height="300px" alt="">
-    <p id="prem"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non beatae aut voluptas quam, iste maiores hic ipsam assumenda sequi adipisci natus laboriosam necessitatibus nihil laudantium rem provident ut cum consectetur?</p>
-    <img src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?cs=srgb&dl=pexels-souvenirpixels-414612.jpg&fm=jpg" width="100%" height="300px" alt="">
-    <p id="route">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum provident cum molestias eligendi libero eos temporibus rerum, magnam sed quam, laborum possimus repellat architecto odit. Fugit ex aspernatur quaerat aliquam!</p>
+        <div class="btn">
+            <button>Get started</button>
+        </div>
+        <div class="footer">
+            <div class="bar">
+                <div class="color one" style="width: 60%;"></div>
+                <div class="color two" style="width: 25%;"></div>
+                <div class="color three" style="width: 15%;"></div>
+            </div>
+
+            <div class="copy">
+                <i class="fa-solid fa-copy"></i>
+            </div>
+        </div>
+        
+    </div>
 </body>
 </html>
